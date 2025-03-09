@@ -51,6 +51,9 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "rspec-rails", "~> 7.0.0"
+  gem "shoulda-matchers", "~> 6.0"
 end
 
 group :development do
@@ -66,3 +69,5 @@ end
 
 gem "graphql", "~> 2.4"
 gem "graphiql-rails", group: :development
+
+gem "validate_url", "~> 1.0"

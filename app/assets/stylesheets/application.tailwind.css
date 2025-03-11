@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@layer components {
+  .btn {
+    @apply text-white rounded-md text-sm px-4 py-3;
+  }
+
+  .btn.btn-primary {
+    @apply bg-blue-500;
+  }
+
+  .btn.btn-danger {
+    @apply bg-red-500;
+  }
+
+  .input {
+    @apply bg-white px-4 py-3 rounded-md border-gray-200 border-1 text-sm placeholder:opacity-60;
+  }
+
+  .input.error {
+    @apply border-red-500 text-red-500;
+  }
+}

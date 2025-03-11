@@ -25,12 +25,12 @@ export default function CreateBookmarkForm({ visible, handleClose }) {
   };
 
   const validateErrors = () => {
-    if (!title) {
+    if (!title.trim()) {
       setErrors({ title: "Can't be blank" });
       return false;
     }
 
-    if (!url) {
+    if (!url.trim()) {
       setErrors({ url: "Can't be blank" });
       return false;
     } else {
